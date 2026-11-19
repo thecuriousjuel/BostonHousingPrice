@@ -52,7 +52,7 @@ def predict():
 if __name__ == '__main__':
     os.environ.pop("WERKZEUG_SERVER_FD", None)
     os.environ.pop("WERKZEUG_RUN_MAIN", None)
-    port = int(os.environ.get("PORT", os.environ.get("BOSTON_LINEAR_PORT", 5207)))
+    port = int(os.environ.get("PORT", os.environ.get("BOSTON_LINEAR_PORT", 6207)))
     host = os.environ.get("HOST", "127.0.0.1")
     print(f"🚀 Boston Housing Linear Regression App running on http://{host}:{port}")
     app.run(host=host, port=port, debug=False, use_reloader=False)
